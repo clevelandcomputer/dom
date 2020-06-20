@@ -45,8 +45,9 @@ content.append(textInput)
 
 textInput.addEventListener('click', function(){
     let userInput = inputElement.value
-    if(userInput !== ''){
     const takeAway = document.querySelector(userInput)
+    console.log(takeAway)
+    if(userInput !== '' || takeAway !== null){
     takeAway.remove()
     }
 })
@@ -69,7 +70,7 @@ content.append(lastButton)
 lastButton.addEventListener('click', function(){
     let userInput2 = inputElement2.value
     if(userInput2 !== ''){
-    const takeAway2 = document.createElement(userInput2)
+    const takeAway2 = document.createElement('div')
     content.append(takeAway2)
     takeAway2.append(userInput2)
     }
