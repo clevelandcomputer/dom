@@ -46,8 +46,7 @@ content.append(textInput)
 textInput.addEventListener('click', function(){
     let userInput = inputElement.value
     const takeAway = document.querySelector(userInput)
-    console.log(takeAway)
-    if(userInput !== '' || takeAway !== null){
+    if(userInput !== '' && takeAway !== null){
     takeAway.remove()
     }
 })
